@@ -1,0 +1,27 @@
+{{>partials/header}}
+
+    <section class="user-list-area">
+        <h2>Lista de Usuário</h2>
+        <ul>
+        {{#users}}
+            <li>
+                <div><strong>Nome:</strong> {{name}}</div>
+                <div><strong>Idade:</strong> {{age}}</div>
+                <div><strong>E-mail:</strong> {{email}}</div>
+            </li>
+        {{/users}}
+        </ul>
+        
+        {{^users}}
+
+            <div class="warning">Nenhum usúario encontrado, verifique e tente novamente...</div>
+            
+        {{/users}}
+
+        {{#search}}
+            <a href="/">Voltar para o Home</a>
+        {{/search}}
+    </section>
+
+
+{{>partials/footer}}

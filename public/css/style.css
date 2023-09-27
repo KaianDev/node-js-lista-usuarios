@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: crimson;
+}
+
+header {
+    background-color: crimson;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.header-container a {
+    color: white;
+}
+
+.search-area form input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.search-btn {
+    background-color: rgb(83, 79, 79);
+    color: crimson;
+    text-transform: uppercase;
+    padding: 5xp 10px;
+    cursor: pointer;
+}
+
+header h1 {
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: white;
+}
+
+main {
+    padding: 10px;
+    margin: 20px 0;
+}
+
+form fieldset {
+    padding: 5px;
+    color: crimson;
+}
+
+form .box-input {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+form .box-input input {
+    flex: 1;
+    padding: 5px;
+    outline: none;
+    background-color: rgb(207, 207, 207);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form .box-input label {
+    font-size: larger;
+    width: 90px;
+    color: black;
+}
+
+form .btn-form {
+    padding: 5px 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    background-color: crimson;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: bold;
+    display: block;
+    margin: 8px 5px 8px auto;
+    cursor: pointer;
+}
+
+form .btn-form:hover {
+    background-color: rgb(189, 48, 76);
+}
+
+.user-list-area {
+    padding: 0 10px;
+    min-height: calc(100vh - 429px);
+    flex: 1;
+}
+
+.user-list-area h2 {
+    color: crimson;
+    margin-top: 20px;
+}
+
+.user-list-area ul {
+    margin-top: 10px;
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.user-list-area li {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid crimson;
+    width: auto;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 800px) {
+    .user-list-area ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: crimson;
+}
+
+.flex-1 {
+    flex: 1;
+}
