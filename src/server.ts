@@ -24,7 +24,7 @@ server.use(express.static(path.join(__dirname, "../public")));
 server.use(express.urlencoded({ extended: true }));
 
 server.use(mainRouter);
-server.use("/api", userRouter);
+server.use("/users", userRouter);
 
 server.listen(process.env.PORT, () =>
     console.log(`Rodando na porta ${process.env.PORT}`)

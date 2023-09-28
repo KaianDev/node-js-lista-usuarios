@@ -8,6 +8,10 @@
                 <div><strong>Nome:</strong> {{name}}</div>
                 <div><strong>Idade:</strong> {{age}}</div>
                 <div><strong>E-mail:</strong> {{email}}</div>
+                <div class="user-option">
+                    <a href="/users/user/{{id}}/edit">Editar</a>
+                    <a href="/users/user/{{id}}/delete">Excluir</a>
+                </div>
             </li>
         {{/users}}
         </ul>

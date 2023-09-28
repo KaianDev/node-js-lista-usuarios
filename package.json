@@ -24,6 +24,7 @@
         "@types/dotenv": "^8.2.0",
         "@types/express": "^4.17.18",
         "@types/mustache-express": "^1.2.2",
-        "@types/sequelize": "^4.28.16"
+        "@types/sequelize": "^4.28.16",
+        "validator": "^13.11.0"
     }
 }
